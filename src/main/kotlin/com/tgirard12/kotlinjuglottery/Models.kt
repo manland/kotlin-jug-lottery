@@ -15,4 +15,4 @@ data class Attendees(val pagination: Pagination, val attendees: List<Attendeed>)
 data class Event(val id: String)
 data class EventDescription(val id: String, val nbAttendee: Int)
 
-data class EventPage(val pagination: Pagination, val events: List<Event>)
+data class Events(val pagination: Pagination, val events: List<Event>)
