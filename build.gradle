@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: '1.2.10'
     }
 }
 
@@ -23,13 +23,13 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jre8', version: '1.2.10'
 
-    compile "io.ktor:ktor-server-core:$ktor_version"
+    compile group: 'io.ktor', name: 'ktor-server-core', version: '0.9.1-alpha-8'
     compile "io.ktor:ktor-server-netty:$ktor_version"
-    compile "io.ktor:ktor-gson:$ktor_version"
+    compile group: 'io.ktor', name: 'ktor-gson', version: '0.9.1-alpha-8'
 
-    compile "ch.qos.logback:logback-classic:1.2.1"
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 }
 
 kotlin {
